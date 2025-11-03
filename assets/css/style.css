@@ -832,8 +832,8 @@ main {
   box-shadow: var(--shadow-3);
   position: relative;
   transition: var(--transition-1);
-  margin: 10px auto; /* ✅ centers the button */
-  display: flex; /* ensures flex centering */
+  margin-top: 10px;
+  margin-left: 0; /* ✅ ensures it sticks to left */
   z-index: 1;
 }
 
