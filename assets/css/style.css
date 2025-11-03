@@ -816,6 +816,7 @@ main {
   line-height: 1.6;
 }
 
+/* Resume Button Styling */
 .resume-btn {
   display: inline-flex;
   align-items: center;
@@ -823,7 +824,7 @@ main {
   gap: 8px;
   background: var(--border-gradient-onyx);
   color: var(--orange-yellow-crayola);
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 12px;
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
@@ -832,9 +833,9 @@ main {
   box-shadow: var(--shadow-3);
   position: relative;
   transition: var(--transition-1);
-  margin-top: 10px;
-  margin-left: 0; /* ✅ ensures it sticks to left */
+  margin-top: 12px;
   z-index: 1;
+  width: fit-content; /* keeps width tight to content */
 }
 
 .resume-btn::before {
@@ -862,6 +863,27 @@ main {
 
 .resume-btn:active {
   transform: scale(0.97);
+}
+
+/* ✅ Optional alignment helper if you want it centered */
+.resume header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* change to center if you want center alignment */
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .resume header {
+    align-items: center; /* centers the button on small screens */
+    text-align: center;
+  }
+
+  .resume-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: var(--fs-6);
+  }
 }
 
 
