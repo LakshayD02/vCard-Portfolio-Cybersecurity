@@ -816,6 +816,54 @@ main {
   line-height: 1.6;
 }
 
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+  text-decoration: none;
+  box-shadow: var(--shadow-3);
+  position: relative;
+  transition: var(--transition-1);
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.resume-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.resume-btn ion-icon {
+  font-size: 18px;
+}
+
+.resume-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
+.resume-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.resume-btn:active {
+  transform: scale(0.97);
+}
+
+
 
 /**
  * skills 
