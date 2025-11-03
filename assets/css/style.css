@@ -866,16 +866,11 @@ main {
 }
 
 @media (max-width: 768px) {
-  .resume header {
-    align-items: center;
-    text-align: center;
-  }
-
   .resume-btn {
     width: 100%;
     justify-content: center;
     font-size: var(--fs-6);
-    margin-bottom: 25px; /* ✅ Added spacing below the button */
+    margin-bottom: 5rem;
   }
 }
 
