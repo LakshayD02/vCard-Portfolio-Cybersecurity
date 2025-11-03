@@ -833,7 +833,7 @@ main {
   position: relative;
   transition: var(--transition-1);
   margin-top: 10px;
-	margin-bottom: 10px;
+  margin-bottom: 1.5rem;
   z-index: 1;
   width: fit-content;        /* ✅ keeps button to content width */
   margin-left: auto;         /* ✅ can switch to 'auto' or '0 auto' for centering */
@@ -856,7 +856,7 @@ main {
 
 .resume-btn:hover {
   background: var(--bg-gradient-yellow-1);
-  color: var(--smoky-black);
+   color: var(--orange-yellow-crayola);
 }
 
 .resume-btn:hover::before {
