@@ -991,10 +991,14 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 230px; /* uniform height for all images */
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  background: #1a1a1a; /* fallback background if image not loaded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-img::before {
