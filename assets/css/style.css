@@ -865,24 +865,13 @@ main {
   transform: scale(0.97);
 }
 
-/* ✅ Optional alignment helper if you want it centered */
-.resume header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* change to center if you want center alignment */
-}
-
 /* ✅ Responsive Design */
 @media (max-width: 768px) {
-  .resume header {
-    align-items: center; /* centers the button on small screens */
-    text-align: center;
-  }
-
   .resume-btn {
     width: 100%;
     justify-content: center;
     font-size: var(--fs-6);
+	margin-bottom: 10px;
   }
 }
 
