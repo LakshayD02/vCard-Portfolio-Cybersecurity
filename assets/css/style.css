@@ -1009,7 +1009,7 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9; /* ✅ ensures all containers are same proportion */
+  aspect-ratio: 16 / 9;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1060,7 +1060,6 @@ main {
   --ionicon-stroke-width: 50px;
 }
 
-/* ✅ FORCE ALL IMAGES TO FIT PERFECTLY */
 .project-img img {
   width: 100% !important;
   height: 100% !important;
@@ -1070,6 +1069,11 @@ main {
   object-position: center;
   transition: transform 0.3s ease-in-out;
   display: block;
+  filter: grayscale(100%);
+}
+
+.project-item > a:hover .project-img img {
+  filter: grayscale(0%);
 }
 
 .project-item > a:hover img {
@@ -1095,7 +1099,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-/* ✅ Responsive Grid Layout */
 @media (min-width: 600px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr);
